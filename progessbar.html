@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>A demonstration of how to access a PROGRESS element</h3>
+
+Downloading progress:
+<progress id="myProgress" value="75" max="100">
+</progress>
+
+<p>Click the button to get the current progress value of the bar (how much of the 
+downloading task has been completed).</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myProgress").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
